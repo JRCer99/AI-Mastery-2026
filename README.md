@@ -2,10 +2,10 @@
 
 My 12-month journey to master AI — from Python basics to autonomous agents.
 
-**Status**: Month 1 in progress
+**Status**: Month 2 up next
 
 ## Progress
-- [ ] Month 1: Python & Git
+- [x] Month 1: Python & Git
 - [ ] Month 2: Math and Stats
 - [ ] Month 3: Machine Learning Fundamentals
 - [ ] Month 4: Deep Learning
