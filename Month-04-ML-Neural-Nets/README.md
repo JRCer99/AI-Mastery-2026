@@ -27,7 +27,7 @@
   - Metrics: accuracy, precision, recall, F1, ROC-AUC
   - Output: visual comparison dashboard (matplotlib/seaborn)
 
-- [ ] Project 3: First Kaggle Competition Submission
+- [x] Project 3: First Kaggle Competition Submission ✅
   - Pick active beginner comp (Titanic or Housing Prices)
   - Submit predictions, document leaderboard score
   - Iterate at least once based on score feedback
