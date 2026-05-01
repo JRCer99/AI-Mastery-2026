@@ -1,6 +1,30 @@
+import random
 import streamlit as st
 from transformers import pipeline
 from datetime import datetime
+
+EXAMPLE_POOL = [
+    "I absolutely love this product! Best purchase ever.",
+    "This is the worst movie I've seen in years.",
+    "The food was okay, nothing special.",
+    "I'm extremely disappointed with the customer service.",
+    "Incredible experience from start to finish — highly recommend!",
+    "Waste of money. Broke after two days.",
+    "Shipping was fast and the packaging was great.",
+    "The app crashes constantly. Totally unusable.",
+    "Not bad, but nothing I'd rave about.",
+    "Staff were rude and unhelpful. Won't be returning.",
+    "Best coffee I've ever had in my life.",
+    "Mediocre at best. Expected way more for the price.",
+    "Five stars — exceeded every expectation.",
+    "I've had better experiences at a gas station.",
+    "Pretty good for the price point.",
+    "Absolutely terrible. Do not buy this.",
+    "Warm, welcoming atmosphere and amazing food.",
+    "The instructions were confusing and incomplete.",
+    "Works exactly as described. Super happy with it.",
+    "Total scam. Looked nothing like the pictures.",
+]
 
 @st.cache_resource
 def load_sentiment_model():
@@ -12,7 +36,17 @@ def main():
     st.markdown("**Month 5 Project 2** — Analyze the sentiment of any text using a fine-tuned LLM.")
     st.write("Paste any text (reviews, tweets, comments, emails, etc.) and get instant sentiment analysis.")
 
-    text_input = st.text_area("Enter text to analyze:", height=150, placeholder="Type or paste your text here...")
+    if "text_input" not in st.session_state:
+        st.session_state["text_input"] = ""
+    if "shown_examples" not in st.session_state:
+        st.session_state["shown_examples"] = random.sample(EXAMPLE_POOL, 4)
+
+    text_input = st.text_area(
+        "Enter text to analyze:",
+        height=150,
+        placeholder="Type or paste your text here...",
+        key="text_input",
+    )
 
     col1, _ = st.columns([1, 3])
     with col1:
@@ -22,8 +56,8 @@ def main():
         with st.spinner("Analyzing..."):
             classifier = load_sentiment_model()
             result = classifier(text_input[:512])[0]
-            label = result['label']
-            score = result['score']
+            label = result["label"]
+            score = result["score"]
             emoji = "😊" if label == "POSITIVE" else "😞"
             st.success(f"{emoji} **{label}**")
             st.metric("Confidence", f"{score:.1%}")
@@ -32,15 +66,19 @@ def main():
             st.progress(score)
 
     st.subheader("Try these examples")
-    examples = [
-        "I absolutely love this product! Best purchase ever.",
-        "This is the worst movie I've seen in years.",
-        "The food was okay, nothing special.",
-        "I'm extremely disappointed with the customer service."
-    ]
-    for ex in examples:
-        if st.button(ex, use_container_width=True):
-            st.session_state.text_input = ex
+    for ex in st.session_state["shown_examples"]:
+        if st.button(ex, use_container_width=True, key=f"ex_{ex[:30]}"):
+            st.session_state["text_input"] = ex
+            st.rerun()
+
+    if st.button("🔀 Generate More Examples", use_container_width=True):
+        current = set(st.session_state["shown_examples"])
+        pool = [e for e in EXAMPLE_POOL if e not in current]
+        # cycle if pool exhausted
+        if len(pool) < 4:
+            pool = EXAMPLE_POOL
+        st.session_state["shown_examples"] = random.sample(pool, 4)
+        st.rerun()
 
     st.caption(f"Built as part of AI Mastery 2026 • {datetime.now().strftime('%B %d, %Y')}")
 
