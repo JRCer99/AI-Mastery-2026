@@ -20,7 +20,7 @@
   - 10-class image classification with a custom CNN
   - Libraries: `torch`, `torchvision`, `matplotlib`, `numpy`
 
-- [ ] Project 2: Sentiment Analysis Web App
+- [x] Project 2: Sentiment Analysis Web App ✅
   - Train NLP model on movie/product reviews, simple web UI
   - Libraries: `torch`, `transformers` or `sklearn`, `flask`
 
