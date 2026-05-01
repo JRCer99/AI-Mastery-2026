@@ -16,11 +16,11 @@
 
 ## 📅 Projects
 
-- [x] Project 1: Titanic / Kaggle Full Data Pipeline
+- [x] Project 1: Titanic / Kaggle Full Data Pipeline ✅
   - End-to-end: raw data → cleaned → feature-engineered → ML-ready CSV
   - Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
 
-- [x] Project 2: Reusable Automated Data Preprocessing Package
+- [x] Project 2: Reusable Automated Data Preprocessing Package ✅
   - Class-based `DataPipeline` transformer reusable across any dataset
   - Libraries: `pandas`, `numpy`, `scikit-learn`
 

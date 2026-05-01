@@ -16,15 +16,15 @@
 
 ## 📅 Projects
 
-- [x] Project 1: Exploratory Data Analysis Dashboard
+- [x] Project 1: Exploratory Data Analysis Dashboard ✅
   - Distributions, mean/median/std, histograms, boxplots
   - Libraries: `pandas`, `matplotlib`, `seaborn`
 
-- [x] Project 2: Gradient Descent from Scratch Visualizer
+- [x] Project 2: Gradient Descent from Scratch Visualizer ✅
   - Implement GD manually, animate convergence
   - Libraries: `numpy`, `matplotlib`
 
-- [x] Project 3: Bayesian Probability Simulator
+- [x] Project 3: Bayesian Probability Simulator ✅
   - Bayes' theorem applied to real scenarios
   - Libraries: `numpy`, `scipy`
 

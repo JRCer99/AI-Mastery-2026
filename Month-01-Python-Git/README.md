@@ -14,11 +14,11 @@
 
 ## 📅 Projects
 
-- [x] Project 1: CLI Task Manager
+- [x] Project 1: CLI Task Manager ✅
   - Priorities, due dates, JSON persistence, full CRUD
   - Libraries: `json`, `datetime`
 
-- [x] Project 2: Personal Portfolio Generator Script
+- [x] Project 2: Personal Portfolio Generator Script ✅
   - Reads `portfolio_data.json`, outputs Markdown + HTML
   - Libraries: `json`, `datetime`
 
