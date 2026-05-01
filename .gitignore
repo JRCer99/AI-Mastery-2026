@@ -2,3 +2,9 @@
 __pycache__/
 *.pyc
 .env
+
+# ML artifacts — keep out of all months
+*.pkl
+*.png
+*.csv
+data/
