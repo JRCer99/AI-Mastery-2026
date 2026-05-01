@@ -20,7 +20,7 @@
   - End-to-end: raw data → cleaned → feature-engineered → ML-ready CSV
   - Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
 
-- [ ] Project 2: Reusable Automated Data Preprocessing Package
+- [x] Project 2: Reusable Automated Data Preprocessing Package
   - Class-based `DataPipeline` transformer reusable across any dataset
   - Libraries: `pandas`, `numpy`, `scikit-learn`
 
