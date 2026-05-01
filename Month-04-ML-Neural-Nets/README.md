@@ -22,7 +22,7 @@
   - Output: trained model (.pkl), MAE/RMSE/R² report
   - Libraries: `pandas`, `numpy`, `scikit-learn`, `joblib`
 
-- [ ] Project 2: Model Comparison Dashboard (Scikit-learn)
+- [x] Project 2: Model Comparison Dashboard (Scikit-learn) ✅
   - Compare 5+ classifiers on a benchmark dataset
   - Metrics: accuracy, precision, recall, F1, ROC-AUC
   - Output: visual comparison dashboard (matplotlib/seaborn)
