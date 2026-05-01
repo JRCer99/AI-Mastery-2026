@@ -7,8 +7,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.svm import SVR
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
 import joblib
 from datetime import datetime
 
@@ -19,10 +17,10 @@ def load_and_preprocess():
     df = pd.read_csv(url)
 
     df = df.copy()
+    df['total_bedrooms'] = df['total_bedrooms'].fillna(df['total_bedrooms'].median())
     df['rooms_per_household'] = df['total_rooms'] / df['households']
     df['bedrooms_ratio'] = df['total_bedrooms'] / df['total_rooms']
     df['population_per_household'] = df['population'] / df['households']
-    df['total_bedrooms'] = df['total_bedrooms'].fillna(df['total_bedrooms'].median())
     df = pd.get_dummies(df, columns=['ocean_proximity'], drop_first=True)
 
     X = df.drop('median_house_value', axis=1)
