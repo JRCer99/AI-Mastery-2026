@@ -28,9 +28,9 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 3: First Kaggle Competition Submission
 
 ### **Month 5: Deep Learning, Computer Vision & NLP**
-- [ ] Project 1: Image Classifier (CNN with PyTorch)
-- [ ] Project 2: Sentiment Analysis Web App
-- [ ] Project 3: Sequence Prediction Model
+- [x] Project 1: Image Classifier (CNN with PyTorch)
+- [x] Project 2: Sentiment Analysis Web App
+- [x] Project 3: Sequence Prediction Model
 
 ### **Month 6: Transformers & Transfer Learning**
 - [ ] Project 1: Fine-tuned BERT for Custom Text Classification

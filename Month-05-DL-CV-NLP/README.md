@@ -24,7 +24,7 @@
   - Train NLP model on movie/product reviews, simple web UI
   - Libraries: `torch`, `transformers` or `sklearn`, `flask`
 
-- [ ] Project 3: Sequence Prediction Model
+- [x] Project 3: Sequence Prediction Model ✅
   - LSTM-based sequence predictor (time series or text)
   - Libraries: `torch`, `numpy`, `matplotlib`
 

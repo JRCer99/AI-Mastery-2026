@@ -1,4 +1,5 @@
 *.pth
+*.png
 data/
 __pycache__/
 *.pyc
