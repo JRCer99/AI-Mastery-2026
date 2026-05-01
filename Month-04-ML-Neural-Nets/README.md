@@ -1,26 +1,26 @@
 # Month 04: Machine Learning & Neural Networks
 
-**Focus:** Build, evaluate, and compare ML models end-to-end. Understand train/eval loops, overfitting, and model selection.
+**Focus:** Supervised learning, model evaluation, feature importance, and building end-to-end ML pipelines with Scikit-learn.
 
 ---
 
-## Learning Goals
+## 🎯 Learning Goals
 
-- Build full ML pipelines: data → features → train → evaluate → deploy-ready
-- Understand bias-variance tradeoff, overfitting, regularization
-- Compare multiple algorithms with cross-validation
+- Build full ML pipelines: raw data → features → train → evaluate → save
+- Understand bias-variance tradeoff, overfitting, and regularization
+- Compare multiple algorithms using cross-validation and metrics
+- Interpret model performance with MAE, RMSE, R², and feature importance
 - Submit to a real Kaggle competition
-- Understand how a basic neural network learns (backprop, activations)
 
 ---
 
-## Projects
+## 📅 Projects
 
-- [ ] Project 1: End-to-End ML Pipeline (House Price Prediction)
-  - Dataset: California Housing (sklearn) or Kaggle Housing Prices
-  - Models: Linear Regression, Ridge, Random Forest, Gradient Boosting
-  - Output: trained model, evaluation report, feature importance plot
-  - Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
+- [x] Project 1: End-to-End ML Pipeline (House Price Prediction)
+  - Dataset: California Housing (via sklearn/handson-ml2)
+  - Model: Random Forest Regressor
+  - Output: trained model (.pkl), MAE/RMSE/R² report
+  - Libraries: `pandas`, `numpy`, `scikit-learn`, `joblib`
 
 - [ ] Project 2: Model Comparison Dashboard (Scikit-learn)
   - Compare 5+ classifiers on a benchmark dataset
@@ -34,26 +34,34 @@
 
 ---
 
-## Key Concepts
+## 🧠 Key Concepts
 
 | Concept | Why It Matters |
 |---|---|
 | Train/val/test split | Honest evaluation, no data leakage |
 | Cross-validation (k-fold) | Robust performance estimate |
+| MAE / RMSE / R² | Regression evaluation metrics |
+| Feature importance | Interpretability + model debugging |
 | Overfitting / regularization | Generalization to unseen data |
-| Hyperparameter tuning (GridSearch) | Squeeze out performance |
-| Feature importance | Interpretability + debugging |
-| Confusion matrix / ROC curve | Beyond accuracy for imbalanced data |
+| Hyperparameter tuning | Squeeze out more performance |
 
 ---
 
-## Folder Structure
+## 📚 Resources
+
+- [Scikit-learn — Supervised Learning](https://scikit-learn.org/stable/supervised_learning.html)
+- [Hands-On ML (Géron) — Chapter 2](https://github.com/ageron/handson-ml2)
+- [Kaggle — Intro to ML Course](https://www.kaggle.com/learn/intro-to-machine-learning)
+
+---
+
+## 📂 Structure
 
 ```
 Month-04-ML-Neural-Nets/
-├── house_price_pipeline.py     # Project 1
-├── model_comparison.py         # Project 2
-├── kaggle_submission.py        # Project 3
-├── notebooks/                  # exploratory work
+├── house_price_pipeline.py     # Project 1: End-to-End ML Pipeline
+├── model_comparison.py         # Project 2: Model Comparison Dashboard
+├── kaggle_submission.py        # Project 3: Kaggle Submission
+├── house_price_model.pkl       # Saved model (gitignored if large)
 └── data/                       # datasets (gitignored if large)
 ```
