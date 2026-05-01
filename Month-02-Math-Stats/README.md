@@ -20,11 +20,11 @@
   - Distributions, mean/median/std, histograms, boxplots
   - Libraries: `pandas`, `matplotlib`, `seaborn`
 
-- [ ] Project 2: Gradient Descent from Scratch Visualizer
+- [x] Project 2: Gradient Descent from Scratch Visualizer
   - Implement GD manually, animate convergence
   - Libraries: `numpy`, `matplotlib`
 
-- [ ] Project 3: Bayesian Probability Simulator
+- [x] Project 3: Bayesian Probability Simulator
   - Bayes' theorem applied to real scenarios
   - Libraries: `numpy`, `scipy`
 
@@ -55,7 +55,7 @@
 ```
 Month-02-Math-Stats/
 ├── eda_dashboard.py       # Project 1
-├── gradient_descent.py    # Project 2
-├── bayesian_simulator.py  # Project 3
+├── gradient_descent_visualizer.py    # Project 2
+├── bayesian_coin_simulator.py        # Project 3
 └── data/                  # datasets
 ```
