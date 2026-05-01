@@ -16,7 +16,7 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Exploratory Data Analysis Dashboard
+- [x] Project 1: Exploratory Data Analysis Dashboard
   - Distributions, mean/median/std, histograms, boxplots
   - Libraries: `pandas`, `matplotlib`, `seaborn`
 
