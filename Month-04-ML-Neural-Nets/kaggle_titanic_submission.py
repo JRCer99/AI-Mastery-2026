@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, VotingClassifier
 from sklearn.model_selection import cross_val_score
 from datetime import datetime
 
@@ -25,7 +25,6 @@ def extract_title(df):
 
 def preprocess(df):
     df = df.copy()
-
     df = extract_title(df)
 
     df['Age'] = df['Age'].fillna(df['Age'].median())
@@ -37,10 +36,8 @@ def preprocess(df):
 
     df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
     df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
-    df['AgeBin'] = pd.cut(df['Age'], bins=[0,12,18,35,60,100], labels=[0,1,2,3,4]).astype(int)
-    df['FareBin'] = pd.qcut(df['Fare'], q=4, labels=[0,1,2,3]).astype(int)
 
-    features = ['Pclass', 'Sex', 'AgeBin', 'FareBin', 'FamilySize', 'IsAlone',
+    features = ['Pclass', 'Sex', 'Age', 'Fare', 'FamilySize', 'IsAlone',
                 'Title', 'Embarked_Q', 'Embarked_S']
 
     for col in features:
@@ -50,37 +47,29 @@ def preprocess(df):
     return df[features]
 
 def main():
-    print("🚢 Kaggle Titanic Submission Pipeline (v2 — improved features)")
+    print("🚢 Kaggle Titanic Submission Pipeline (v3 — ensemble)")
     print("="*70)
 
     train_raw, test_raw = load_data()
-
     X_train = preprocess(train_raw)
     y_train = train_raw['Survived']
     X_test = preprocess(test_raw)
 
-    models = {
-        "Random Forest": RandomForestClassifier(n_estimators=300, max_depth=7, min_samples_split=4, random_state=42),
-        "Gradient Boosting": GradientBoostingClassifier(n_estimators=200, max_depth=4, learning_rate=0.05, random_state=42),
-    }
+    rf = RandomForestClassifier(n_estimators=500, max_depth=6, min_samples_split=4,
+                                min_samples_leaf=2, random_state=42)
+    gb = GradientBoostingClassifier(n_estimators=300, max_depth=3, learning_rate=0.05,
+                                    subsample=0.8, random_state=42)
 
-    best_score = 0
-    best_model = None
-    best_name = ""
+    ensemble = VotingClassifier(estimators=[('rf', rf), ('gb', gb)], voting='soft')
 
-    for name, model in models.items():
+    for name, model in [("Random Forest", rf), ("Gradient Boosting", gb), ("Ensemble", ensemble)]:
         cv = cross_val_score(model, X_train, y_train, cv=5, scoring='accuracy')
-        print(f"\n📊 {name}")
-        print(f"   CV Accuracy: {cv.mean():.4f} (±{cv.std():.4f})")
-        if cv.mean() > best_score:
-            best_score = cv.mean()
-            best_model = model
-            best_name = name
+        print(f"\n📊 {name}: {cv.mean():.4f} (±{cv.std():.4f})")
 
-    print(f"\n🏆 Best: {best_name} ({best_score:.4f})")
-    best_model.fit(X_train, y_train)
+    print("\n🏆 Training ensemble on full data...")
+    ensemble.fit(X_train, y_train)
 
-    predictions = best_model.predict(X_test)
+    predictions = ensemble.predict(X_test)
     submission = pd.DataFrame({'PassengerId': test_raw['PassengerId'], 'Survived': predictions})
     submission.to_csv('submission.csv', index=False)
     print(f"✅ submission.csv saved — {len(submission)} predictions")
