@@ -23,9 +23,9 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 2: Reusable Automated Data Preprocessing Package
 
 ### **Month 4: Machine Learning & Neural Networks**
-- [ ] Project 1: End-to-End ML Pipeline (e.g. House Price Prediction)
-- [ ] Project 2: Model Comparison Dashboard (Scikit-learn)
-- [ ] Project 3: First Kaggle Competition Submission
+- [x] Project 1: End-to-End ML Pipeline (e.g. House Price Prediction)
+- [x] Project 2: Model Comparison Dashboard (Scikit-learn)
+- [x] Project 3: First Kaggle Competition Submission
 
 ### **Month 5: Deep Learning, Computer Vision & NLP**
 - [ ] Project 1: Image Classifier (CNN with PyTorch)
