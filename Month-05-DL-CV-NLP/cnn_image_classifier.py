@@ -4,8 +4,6 @@ import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
-import matplotlib.pyplot as plt
-import numpy as np
 from datetime import datetime
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -87,7 +85,7 @@ def evaluate_model(model, testloader):
 def main():
     model = SimpleCNN().to(device)
     train_model(model, trainloader, epochs=5)
-    accuracy = evaluate_model(model, testloader)
+    evaluate_model(model, testloader)
 
     torch.save(model.state_dict(), 'fashion_mnist_cnn.pth')
     print("✅ Model saved as fashion_mnist_cnn.pth")
