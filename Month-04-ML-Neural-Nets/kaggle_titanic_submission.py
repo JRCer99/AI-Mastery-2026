@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import cross_val_score
 from datetime import datetime
 
@@ -14,26 +13,36 @@ def load_data():
     print(f"✅ Train: {train.shape} | Test: {test.shape}")
     return train, test
 
-def preprocess(df, is_train=True):
+def extract_title(df):
+    df['Title'] = df['Name'].str.extract(r' ([A-Za-z]+)\.', expand=False)
+    df['Title'] = df['Title'].replace(
+        ['Lady','Countess','Capt','Col','Don','Dr','Major','Rev','Sir','Jonkheer','Dona'], 'Rare'
+    )
+    df['Title'] = df['Title'].replace({'Mlle': 'Miss', 'Ms': 'Miss', 'Mme': 'Mrs'})
+    df['Title'] = df['Title'].map({'Mr': 0, 'Miss': 1, 'Mrs': 2, 'Master': 3, 'Rare': 4})
+    df['Title'] = df['Title'].fillna(0)
+    return df
+
+def preprocess(df):
     df = df.copy()
 
-    # Fill missing values
+    df = extract_title(df)
+
     df['Age'] = df['Age'].fillna(df['Age'].median())
     df['Fare'] = df['Fare'].fillna(df['Fare'].median())
     df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
-    # Encode categoricals
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df = pd.get_dummies(df, columns=['Embarked'], drop_first=True)
 
-    # Feature engineering
     df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
     df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
+    df['AgeBin'] = pd.cut(df['Age'], bins=[0,12,18,35,60,100], labels=[0,1,2,3,4]).astype(int)
+    df['FareBin'] = pd.qcut(df['Fare'], q=4, labels=[0,1,2,3]).astype(int)
 
-    features = ['Pclass', 'Sex', 'Age', 'Fare', 'FamilySize', 'IsAlone',
-                'Embarked_Q', 'Embarked_S']
+    features = ['Pclass', 'Sex', 'AgeBin', 'FareBin', 'FamilySize', 'IsAlone',
+                'Title', 'Embarked_Q', 'Embarked_S']
 
-    # Ensure all expected columns exist (test may be missing some dummies)
     for col in features:
         if col not in df.columns:
             df[col] = 0
@@ -41,32 +50,42 @@ def preprocess(df, is_train=True):
     return df[features]
 
 def main():
-    print("🚢 Kaggle Titanic Submission Pipeline")
+    print("🚢 Kaggle Titanic Submission Pipeline (v2 — improved features)")
     print("="*70)
 
     train_raw, test_raw = load_data()
 
-    X_train = preprocess(train_raw, is_train=True)
+    X_train = preprocess(train_raw)
     y_train = train_raw['Survived']
-    X_test = preprocess(test_raw, is_train=False)
+    X_test = preprocess(test_raw)
 
-    model = RandomForestClassifier(n_estimators=200, max_depth=6, random_state=42)
-    model.fit(X_train, y_train)
+    models = {
+        "Random Forest": RandomForestClassifier(n_estimators=300, max_depth=7, min_samples_split=4, random_state=42),
+        "Gradient Boosting": GradientBoostingClassifier(n_estimators=200, max_depth=4, learning_rate=0.05, random_state=42),
+    }
 
-    cv_scores = cross_val_score(model, X_train, y_train, cv=5, scoring='accuracy')
-    print(f"\n📊 CV Accuracy: {cv_scores.mean():.4f} (±{cv_scores.std():.4f})")
+    best_score = 0
+    best_model = None
+    best_name = ""
 
-    predictions = model.predict(X_test)
+    for name, model in models.items():
+        cv = cross_val_score(model, X_train, y_train, cv=5, scoring='accuracy')
+        print(f"\n📊 {name}")
+        print(f"   CV Accuracy: {cv.mean():.4f} (±{cv.std():.4f})")
+        if cv.mean() > best_score:
+            best_score = cv.mean()
+            best_model = model
+            best_name = name
 
-    submission = pd.DataFrame({
-        'PassengerId': test_raw['PassengerId'],
-        'Survived': predictions
-    })
+    print(f"\n🏆 Best: {best_name} ({best_score:.4f})")
+    best_model.fit(X_train, y_train)
+
+    predictions = best_model.predict(X_test)
+    submission = pd.DataFrame({'PassengerId': test_raw['PassengerId'], 'Survived': predictions})
     submission.to_csv('submission.csv', index=False)
     print(f"✅ submission.csv saved — {len(submission)} predictions")
-    print("\n📤 Upload submission.csv at:")
-    print("   https://www.kaggle.com/competitions/titanic/submit")
-    print(f"\n🎉 Month 4 Project 3 Complete! - {datetime.now().strftime('%B %d, %Y')}")
+    print("\n📤 Upload at: https://www.kaggle.com/competitions/titanic/submit")
+    print(f"\n🎉 {datetime.now().strftime('%B %d, %Y')}")
 
 if __name__ == "__main__":
     main()
