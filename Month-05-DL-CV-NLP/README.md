@@ -16,7 +16,7 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: CNN Image Classifier (Fashion MNIST)
+- [x] Project 1: CNN Image Classifier (Fashion MNIST) ✅
   - 10-class image classification with a custom CNN
   - Libraries: `torch`, `torchvision`, `matplotlib`, `numpy`
 
