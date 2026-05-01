@@ -16,7 +16,7 @@
 
 ## 📅 Projects
 
-- [x] Project 1: End-to-End ML Pipeline (House Price Prediction)
+- [x] Project 1: End-to-End ML Pipeline (House Price Prediction) ✅
   - Dataset: California Housing (via sklearn/handson-ml2)
   - Model: Random Forest Regressor
   - Output: trained model (.pkl), MAE/RMSE/R² report
