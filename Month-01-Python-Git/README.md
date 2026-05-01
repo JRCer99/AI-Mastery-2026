@@ -2,6 +2,14 @@
 
 **Focus:** Core Python programming, CLI tools, file I/O, and Git workflow fundamentals.
 
+## 🎯 Learning Goals
+
+- Write clean, idiomatic Python with functions, classes, and modules
+- Handle file I/O and persist data with JSON
+- Build interactive CLI tools with menus and input validation
+- Apply Git workflow: init, commit, push, branching
+- Generate formatted output (Markdown, HTML) from data
+
 ---
 
 ## 📅 Projects
@@ -27,6 +35,14 @@
 | CLI input handling | Task Manager menu loop |
 | Git workflow | Commits, push, branching |
 | String formatting | HTML/Markdown generation |
+
+---
+
+## 📚 Resources
+
+- [Python Docs — Built-in Types](https://docs.python.org/3/library/stdtypes.html)
+- [Real Python — Working with JSON](https://realpython.com/python-json/)
+- [Git — Official Getting Started Guide](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
 ---
 
