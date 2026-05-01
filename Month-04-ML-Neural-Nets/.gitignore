@@ -1,4 +1,5 @@
 *.pkl
+*.png
 data/
 __pycache__/
 *.pyc
