@@ -19,8 +19,8 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 3: Bayesian Probability Simulator
 
 ### **Month 3: Exploratory Data Manipulation & Feature Engineering**
-- [ ] Project 1: Titanic / Kaggle Full Data Pipeline
-- [ ] Project 2: Reusable Automated Data Preprocessing Package
+- [x] Project 1: Titanic / Kaggle Full Data Pipeline
+- [x] Project 2: Reusable Automated Data Preprocessing Package
 
 ### **Month 4: Machine Learning & Neural Networks**
 - [ ] Project 1: End-to-End ML Pipeline (e.g. House Price Prediction)
