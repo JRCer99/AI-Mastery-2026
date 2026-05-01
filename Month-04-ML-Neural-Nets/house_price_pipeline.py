@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.preprocessing import StandardScaler
 import joblib
 from datetime import datetime
 
@@ -42,7 +41,7 @@ def train_model(X, y):
     print(f"Root Mean Squared Error: ${np.sqrt(mean_squared_error(y_test, y_pred)):,.2f}")
     print(f"R² Score: {r2_score(y_test, y_pred):.4f}")
 
-    return model, X_test, y_test, y_pred
+    return model
 
 def main():
     print("🏠 End-to-End ML Pipeline - House Price Prediction")
@@ -54,7 +53,7 @@ def main():
     X = df.drop('median_house_value', axis=1)
     y = df['median_house_value']
 
-    model, X_test, y_test, y_pred = train_model(X, y)
+    model = train_model(X, y)
 
     joblib.dump(model, 'house_price_model.pkl')
     print("✅ Model saved as house_price_model.pkl")
