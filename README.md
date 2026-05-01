@@ -14,9 +14,9 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [ ] Bonus: Study With Me Live Dashboard (optional early build)
 
 ### **Month 2: Math and Stats**
-- [ ] Project 1: Exploratory Data Analysis Dashboard (distributions, statistics)
-- [ ] Project 2: Gradient Descent from Scratch Visualizer
-- [ ] Project 3: Bayesian Probability Simulator
+- [x] Project 1: Exploratory Data Analysis Dashboard (distributions, statistics)
+- [x] Project 2: Gradient Descent from Scratch Visualizer
+- [x] Project 3: Bayesian Probability Simulator
 
 ### **Month 3: Exploratory Data Manipulation & Feature Engineering**
 - [ ] Project 1: Titanic / Kaggle Full Data Pipeline
