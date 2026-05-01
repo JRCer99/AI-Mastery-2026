@@ -72,18 +72,21 @@ def main():
             st.code(ex, language=None)
         with col_btn:
             st.write("")  # vertical align
-            if st.button("Use", key=f"ex_{ex[:30]}", use_container_width=True):
-                st.session_state["text_input"] = ex
-                st.rerun()
+            st.button(
+                "Use",
+                key=f"ex_{ex[:30]}",
+                use_container_width=True,
+                on_click=lambda e=ex: st.session_state.update({"text_input": e}),
+            )
 
-    if st.button("🔀 Generate More Examples", use_container_width=True):
+    def refresh_examples():
         current = set(st.session_state["shown_examples"])
         pool = [e for e in EXAMPLE_POOL if e not in current]
-        # cycle if pool exhausted
         if len(pool) < 4:
             pool = EXAMPLE_POOL
         st.session_state["shown_examples"] = random.sample(pool, 4)
-        st.rerun()
+
+    st.button("🔀 Generate More Examples", use_container_width=True, on_click=refresh_examples)
 
     st.caption(f"Built as part of AI Mastery 2026 • {datetime.now().strftime('%B %d, %Y')}")
 
