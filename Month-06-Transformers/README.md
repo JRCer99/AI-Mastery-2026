@@ -15,7 +15,7 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Fine-tuned BERT for Custom Text Classification
+- [x] Project 1: Fine-tuned BERT for Custom Text Classification ✅
   - Fine-tune BERT on a domain-specific dataset
   - Libraries: `transformers`, `torch`, `datasets`
 
