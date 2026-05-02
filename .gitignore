@@ -8,3 +8,11 @@ __pycache__/
 *.png
 *.csv
 data/
+
+# Future month READMEs — local only until work begins
+Month-07-GenAI-LLMs/README.md
+Month-08-MLOps/README.md
+Month-09-LLM-Agents/README.md
+Month-10-Vector-DBs/README.md
+Month-11-RAG/README.md
+Month-12-Agentic-AI/README.md
