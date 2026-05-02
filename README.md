@@ -38,13 +38,13 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 
 ### **Month 7: Generative AI, LLMs & Fine-Tuning**
 - [ ] Project 1: Domain-Specific Fine-tuned LLM
-- [ ] Project 2: AI Code Reviewer Tool
-- [ ] Project 3: Rate My Resume Web App (AI-powered)
+- [ ] Project 2: 🏆 AI Code Reviewer Tool *(Weekend Project)*
+- [ ] Project 3: 🏆 Rate My Resume Web App *(Weekend Project)*
 
 ### **Month 8: MLOps & LLMOps**
 - [ ] Project 1: Dockerized + MLflow Tracked Model
 - [ ] Project 2: CI/CD Pipeline with GitHub Actions
-- [ ] Project 3: Production Study With Me Dashboard (if built earlier)
+- [ ] Project 3: 🏆 Study With Me Live Dashboard *(Weekend Project)*
 
 ### **Month 9: LLM Orchestration & Agent Foundations** *(Bridge Month)*
 - [ ] LangChain / LlamaIndex basics
@@ -53,16 +53,16 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 
 ### **Month 10: Vector Embeddings & Vector Databases**
 - [ ] Project 1: Semantic Search Engine over Documents
-- [ ] Project 2: Personal Notes → Searchable Knowledge Base (RAG)
+- [ ] Project 2: 🏆 Personal Notes → Searchable Knowledge Base *(Weekend Project)*
 
 ### **Month 11: Retrieval-Augmented Generation (RAG)**
-- [ ] Project 1: Personal Knowledge Base Chatbot (Advanced RAG)
+- [ ] Project 1: 🏆 Personal Knowledge Base Chatbot — Advanced RAG *(Weekend Project)*
 - [ ] Project 2: Domain Expert RAG System
 
 ### **Month 12: Agentic AI & Autonomous Multimodal Agents**
 - [ ] Project 1: Multi-Agent Research Team (CrewAI / LangGraph)
 - [ ] Project 2: Autonomous Multimodal Assistant
-- [ ] Project 3: Chrome Extension (AI Summarizer / Distraction Blocker)
+- [ ] Project 3: 🏆 Chrome Extension — AI Summarizer *(Weekend Project)*
 - [ ] Capstone: Fully Autonomous AI Agent System
 
 ---
@@ -82,18 +82,30 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 ```
 AI-Mastery-2026/
 ├── Month-01-Python-Git/
-│   └── task_manager.py       # Project 1: CLI Task Manager
-├── Month-02-Math-Stats/      # coming soon
-├── Month-03-Data-Engineering/
+│   ├── task_manager.py              # Project 1: CLI Task Manager
+│   └── portfolio_generator.py       # Project 2: Portfolio Generator
+├── Month-02-Math-Stats/
+│   ├── eda_dashboard.py             # Project 1: EDA Dashboard
+│   ├── gradient_descent_visualizer.py  # Project 2: Gradient Descent Viz
+│   └── bayesian_coin_simulator.py   # Project 3: Bayesian Simulator
+├── Month-03-Data-Prep/
+│   ├── titanic_pipeline.py          # Project 1: Titanic Pipeline
+│   └── reusable_preprocessor_demo.py  # Project 2: Reusable Preprocessor
 ├── Month-04-ML-Neural-Nets/
+│   ├── house_price_pipeline.py      # Project 1: ML Pipeline
+│   ├── model_comparison_dashboard.py  # Project 2: Model Dashboard
+│   └── kaggle_titanic_submission.py  # Project 3: Kaggle Submission
 ├── Month-05-DL-CV-NLP/
-├── Month-06-Transformers/
-├── Month-07-GenAI-LLMs/
-├── Month-08-MLOps/
+│   ├── cnn_image_classifier.py      # Project 1: CNN Fashion MNIST
+│   ├── sentiment_analysis_app.py    # Project 2: Sentiment Web App
+│   └── lstm_sequence_predictor.py   # Project 3: LSTM Sequence Model
+├── Month-06-Transformers/           # up next
+├── Month-07-GenAI-LLMs/             # 🏆 AI Code Reviewer + Rate My Resume
+├── Month-08-MLOps/                  # 🏆 Study With Me Dashboard
 ├── Month-09-LLM-Agents/
-├── Month-10-Vector-DBs/
-├── Month-11-RAG/
-└── Month-12-Agentic-AI/
+├── Month-10-Vector-DBs/             # 🏆 Searchable Knowledge Base
+├── Month-11-RAG/                    # 🏆 Knowledge Base Chatbot
+└── Month-12-Agentic-AI/             # 🏆 Chrome Extension
 ```
 
 ---
