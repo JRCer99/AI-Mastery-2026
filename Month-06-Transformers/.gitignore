@@ -1,5 +1,7 @@
 results/
+transfer_results/
 logs/
 bert_spam_classifier/
+bert_movie_review_classifier/
 __pycache__/
 *.pyc

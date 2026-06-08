@@ -33,8 +33,8 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 3: Sequence Prediction Model
 
 ### **Month 6: Transformers & Transfer Learning**
-- [ ] Project 1: Fine-tuned BERT for Custom Text Classification
-- [ ] Project 2: Transfer Learning Demo (Domain Adaptation)
+- [x] Project 1: Fine-tuned BERT for Custom Text Classification
+- [x] Project 2: Transfer Learning Demo (Domain Adaptation)
 
 ### **Month 7: Generative AI, LLMs & Fine-Tuning**
 - [ ] Project 1: Domain-Specific Fine-tuned LLM

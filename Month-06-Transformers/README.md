@@ -19,7 +19,7 @@
   - Fine-tune BERT on a domain-specific dataset
   - Libraries: `transformers`, `torch`, `datasets`
 
-- [ ] Project 2: Transfer Learning Demo (Domain Adaptation)
+- [x] Project 2: Transfer Learning Demo (Domain Adaptation) ✅
   - Adapt a pre-trained model to a new domain/task
   - Libraries: `transformers`, `torch`, `sklearn`
 
