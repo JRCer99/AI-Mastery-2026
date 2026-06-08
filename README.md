@@ -101,7 +101,7 @@ AI-Mastery-2026/
 │   └── lstm_sequence_predictor.py   # Project 3: LSTM Sequence Model
 ├── Month-06-Transformers/           # up next
 ├── Month-07-GenerativeAI-LLMs/      # 🏆 AI Code Reviewer + Rate My Resume
-├── Month-08-MLOps/                  # 🏆 Study With Me Dashboard
+├── Month-08-MLOps-LLMOps/           # 🏆 Study With Me Dashboard
 ├── Month-09-LLM-Agents/
 ├── Month-10-Vector-DBs/             # 🏆 Searchable Knowledge Base
 ├── Month-11-RAG/                    # 🏆 Knowledge Base Chatbot
