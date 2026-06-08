@@ -15,7 +15,7 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Domain-Specific Fine-tuned LLM
+- [x] Project 1: Domain-Specific Fine-tuned LLM ✅
   - Fine-tune a GPT-style model on a custom dataset
   - Libraries: `transformers`, `datasets`, `torch`, `peft`
 
