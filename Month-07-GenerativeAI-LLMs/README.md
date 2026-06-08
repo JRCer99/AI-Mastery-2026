@@ -19,11 +19,11 @@
   - Fine-tune a GPT-style model on a custom dataset
   - Libraries: `transformers`, `datasets`, `torch`, `peft`
 
-- [ ] Project 2: 🏆 AI Code Reviewer Tool *(Weekend Project)*
+- [x] Project 2: 🏆 AI Code Reviewer Tool ✅
   - LLM-powered tool that reviews code and gives feedback
   - Libraries: `anthropic` / `openai`, `streamlit`
 
-- [ ] Project 3: 🏆 Rate My Resume Web App *(Weekend Project)*
+- [x] Project 3: 🏆 Rate My Resume Web App ✅
   - Upload a resume, get AI-powered feedback and score
   - Libraries: `anthropic` / `openai`, `streamlit`, `pypdf2`
 
