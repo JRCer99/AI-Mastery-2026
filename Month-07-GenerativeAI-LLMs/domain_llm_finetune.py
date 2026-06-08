@@ -37,7 +37,7 @@ def main():
         tokens["labels"] = tokens["input_ids"].copy()  # causal LM: labels = input_ids
         return tokens
 
-    tokenized_dataset = dataset.map(tokenize_function, batched=True)
+    tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=["text"])
 
     training_args = TrainingArguments(
         output_dir="./phi_domain_results",
@@ -60,6 +60,7 @@ def main():
     tokenizer.save_pretrained("domain_ai_advisor")
     print("✅ Domain-specific LLM saved!")
 
+    model.eval()
     prompt = "Q: What's the best way to learn AI in 2026? A:"
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
     outputs = model.generate(**inputs, max_new_tokens=100, do_sample=True, temperature=0.7)
