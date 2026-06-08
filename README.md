@@ -37,9 +37,9 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 2: Transfer Learning Demo (Domain Adaptation)
 
 ### **Month 7: Generative AI, LLMs & Fine-Tuning**
-- [ ] Project 1: Domain-Specific Fine-tuned LLM
-- [ ] Project 2: 🏆 AI Code Reviewer Tool *(Weekend Project)*
-- [ ] Project 3: 🏆 Rate My Resume Web App *(Weekend Project)*
+- [x] Project 1: Domain-Specific Fine-tuned LLM ✅
+- [x] Project 2: 🏆 AI Code Reviewer Tool ✅
+- [x] Project 3: 🏆 Rate My Resume Web App ✅
 
 ### **Month 8: MLOps & LLMOps**
 - [ ] Project 1: Dockerized + MLflow Tracked Model
@@ -100,7 +100,7 @@ AI-Mastery-2026/
 │   ├── sentiment_analysis_app.py    # Project 2: Sentiment Web App
 │   └── lstm_sequence_predictor.py   # Project 3: LSTM Sequence Model
 ├── Month-06-Transformers/           # up next
-├── Month-07-GenAI-LLMs/             # 🏆 AI Code Reviewer + Rate My Resume
+├── Month-07-GenerativeAI-LLMs/      # 🏆 AI Code Reviewer + Rate My Resume
 ├── Month-08-MLOps/                  # 🏆 Study With Me Dashboard
 ├── Month-09-LLM-Agents/
 ├── Month-10-Vector-DBs/             # 🏆 Searchable Knowledge Base
