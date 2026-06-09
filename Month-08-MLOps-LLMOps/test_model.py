@@ -1,15 +1,18 @@
 import pytest
 import joblib
 import pandas as pd
+from pathlib import Path
+
+MODEL_PATH = Path(__file__).parent / "house_price_model.pkl"
 
 
 def test_model_exists():
-    model = joblib.load("house_price_model.pkl")
+    model = joblib.load(MODEL_PATH)
     assert model is not None
 
 
 def test_model_prediction():
-    model = joblib.load("house_price_model.pkl")
+    model = joblib.load(MODEL_PATH)
     # drop_first=True drops <1H OCEAN (alphabetically first), so 4 dummies remain
     # Column order must match training: engineered features added before get_dummies
     sample = pd.DataFrame({
@@ -25,4 +28,4 @@ def test_model_prediction():
         'ocean_proximity_NEAR OCEAN': [0],
     })
     prediction = model.predict(sample)
-    assert prediction[0] > 0
+    assert 0 < prediction[0] < 2_000_000
