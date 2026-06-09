@@ -1,0 +1,38 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest scikit-learn pandas joblib mlflow numpy
+
+    - name: Train model
+      working-directory: Month-08-MLOps-LLMOps
+      run: python mlops_house_price.py
+
+    - name: Run tests
+      working-directory: Month-08-MLOps-LLMOps
+      run: pytest test_model.py -v
+
+    - name: Lint with pylint
+      working-directory: Month-08-MLOps-LLMOps
+      run: |
+        pip install pylint
+        pylint --disable=all --enable=E,F mlops_house_price.py || exit 0
