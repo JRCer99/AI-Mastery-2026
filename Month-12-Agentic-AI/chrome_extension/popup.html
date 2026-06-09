@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JRC AI Summarizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo">🤖</span>
+      <h1>AI Summarizer</h1>
+      <span id="mode-badge" class="badge mock">MOCK</span>
+    </header>
+
+    <div id="api-section">
+      <input type="password" id="api-key-input" placeholder="Paste ANTHROPIC_API_KEY to enable live mode" />
+      <button id="save-key-btn" class="btn secondary">Save Key</button>
+    </div>
+
+    <button id="summarize-btn" class="btn primary">⚡ Summarize This Page</button>
+
+    <div id="status" class="status hidden"></div>
+
+    <div id="result-box" class="hidden">
+      <div class="result-header">
+        <span>Summary</span>
+        <button id="copy-btn" class="btn small">Copy</button>
+      </div>
+      <div id="summary-text"></div>
+    </div>
+
+    <footer>Month 12 Project 3 — AI Mastery 2026</footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

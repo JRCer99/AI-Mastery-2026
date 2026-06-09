@@ -1,0 +1,106 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 380px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f0f17;
+  color: #e2e8f0;
+  font-size: 13px;
+}
+
+.container { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .logo { font-size: 20px; }
+header h1 { font-size: 15px; font-weight: 600; flex: 1; }
+
+.badge {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.badge.mock { background: #78350f; color: #fcd34d; }
+.badge.live { background: #14532d; color: #86efac; }
+
+#api-section {
+  display: flex;
+  gap: 6px;
+}
+#api-key-input {
+  flex: 1;
+  padding: 6px 10px;
+  background: #1e1e2e;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 12px;
+  outline: none;
+}
+#api-key-input:focus { border-color: #7c3aed; }
+#api-key-input::placeholder { color: #6b7280; }
+
+.btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.btn:hover { opacity: 0.85; }
+.btn.primary { background: #7c3aed; color: #fff; width: 100%; padding: 10px; font-size: 13px; }
+.btn.secondary { background: #1e1e2e; color: #a78bfa; border: 1px solid #374151; white-space: nowrap; }
+.btn.small { background: #1e1e2e; color: #94a3b8; border: 1px solid #374151; padding: 4px 10px; font-size: 11px; }
+
+.status {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #1e1e2e;
+  color: #94a3b8;
+  font-size: 12px;
+}
+.status.error { background: #2d1515; color: #f87171; }
+
+#result-box {
+  background: #1e1e2e;
+  border: 1px solid #2d2d4e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #2d2d4e;
+  font-size: 11px;
+  color: #a78bfa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#summary-text {
+  padding: 12px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  font-size: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.hidden { display: none; }
+
+footer {
+  text-align: center;
+  color: #4b5563;
+  font-size: 10px;
+  padding-top: 4px;
+}
