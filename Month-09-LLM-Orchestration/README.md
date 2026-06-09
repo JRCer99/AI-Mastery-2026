@@ -19,9 +19,9 @@
   - Agent with tool calling: time lookup + calculator
   - Libraries: `langchain-core`
 
-- [ ] Multi-tool Agent Skeleton
-  - Modular agent framework for Month 12 capstone
-  - Libraries: `langchain`, `langgraph`
+- [x] Multi-tool Agent Skeleton ✅
+  - Modular agent framework: Tool, Memory, Agent base classes + ReAct loop
+  - Libraries: `dataclasses`, `re`, `datetime` (pure Python — no API needed)
 
 ---
 
@@ -50,5 +50,5 @@
 ```
 Month-09-LLM-Orchestration/
 ├── simple_tool_agent.py    # Project 1: Tool-Use Agent
-└── multi_tool_skeleton.py  # Project 2: Multi-tool Skeleton (coming soon)
+└── multi_tool_skeleton.py  # Project 2: Multi-tool Agent Skeleton
 ```

@@ -47,9 +47,8 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 3: 🏆 Study With Me Live Dashboard ✅
 
 ### **Month 9: LLM Orchestration & Agent Foundations** *(Bridge Month)*
-- [ ] LangChain / LlamaIndex basics
-- [ ] Simple Tool-Use Agent
-- [ ] Multi-tool Agent Skeleton
+- [x] Simple Tool-Use Agent ✅
+- [x] Multi-tool Agent Skeleton ✅
 
 ### **Month 10: Vector Embeddings & Vector Databases**
 - [ ] Project 1: Semantic Search Engine over Documents
