@@ -22,7 +22,9 @@
   - Reads `portfolio_data.json`, outputs Markdown + HTML
   - Libraries: `json`, `datetime`
 
-- [ ] Bonus: Study With Me Live Dashboard *(optional)*
+- [x] Bonus: Study With Me Live Dashboard ✅
+  - Real-time study session tracker with SQLite persistence and charts
+  - Libraries: `streamlit`, `sqlite3`, `pandas`
 
 ---
 
@@ -54,5 +56,6 @@ Month-01-Python-Git/
 ├── tasks.json             # Task persistence data
 ├── portfolio_generator.py # Project 2
 ├── portfolio_data.json    # Portfolio source data
-└── portfolio_README.md    # Generated output (git-ignored)
+├── portfolio_README.md    # Generated output (git-ignored)
+└── study_with_me_dashboard.py  # Bonus: Study Dashboard
 ```
