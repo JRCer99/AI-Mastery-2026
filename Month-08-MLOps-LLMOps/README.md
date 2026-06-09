@@ -15,11 +15,11 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Dockerized + MLflow Tracked Model
+- [x] Project 1: Dockerized + MLflow Tracked Model ✅
   - Containerize a trained model, track runs with MLflow
   - Libraries: `mlflow`, `docker`, `fastapi` or `flask`
 
-- [ ] Project 2: CI/CD Pipeline with GitHub Actions
+- [x] Project 2: CI/CD Pipeline with GitHub Actions ✅
   - Automate test → lint → deploy on push
   - Tools: GitHub Actions, pytest, flake8
 

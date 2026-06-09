@@ -42,8 +42,8 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 3: 🏆 Rate My Resume Web App ✅
 
 ### **Month 8: MLOps & LLMOps**
-- [ ] Project 1: Dockerized + MLflow Tracked Model
-- [ ] Project 2: CI/CD Pipeline with GitHub Actions
+- [x] Project 1: Dockerized + MLflow Tracked Model ✅
+- [x] Project 2: CI/CD Pipeline with GitHub Actions ✅
 - [ ] Project 3: 🏆 Study With Me Live Dashboard *(Weekend Project)*
 
 ### **Month 9: LLM Orchestration & Agent Foundations** *(Bridge Month)*
