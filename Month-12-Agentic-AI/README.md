@@ -15,9 +15,9 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Multi-Agent Research Team (CrewAI / LangGraph)
-  - Agents that plan, search, write, and review collaboratively
-  - Libraries: `crewai` or `langgraph`, `anthropic`
+- [x] Project 1: Multi-Agent Research Team ✅
+  - CrewAI-compatible Agent/Task/Crew pipeline — Researcher → Writer, saves markdown report
+  - Libraries: pure Python (CrewAI interface built from scratch for Python 3.9 compat)
 
 - [ ] Project 2: Autonomous Multimodal Assistant
   - Agent that processes text + images to complete tasks

@@ -59,7 +59,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Project 2: Domain Expert RAG System ✅
 
 ### **Month 12: Agentic AI & Autonomous Multimodal Agents**
-- [ ] Project 1: Multi-Agent Research Team (CrewAI / LangGraph)
+- [x] Project 1: Multi-Agent Research Team ✅
 - [ ] Project 2: Autonomous Multimodal Assistant
 - [ ] Project 3: 🏆 Chrome Extension — AI Summarizer *(Weekend Project)*
 - [ ] Capstone: Fully Autonomous AI Agent System
