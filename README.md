@@ -61,7 +61,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 ### **Month 12: Agentic AI & Autonomous Multimodal Agents**
 - [x] Project 1: Multi-Agent Research Team ✅
 - [x] Project 2: Autonomous Multimodal Assistant ✅
-- [ ] Project 3: 🏆 Chrome Extension — AI Summarizer *(Weekend Project)*
+- [x] Project 3: 🏆 Chrome Extension — AI Summarizer ✅ *(Weekend Project)*
 - [ ] Capstone: Fully Autonomous AI Agent System
 
 ---

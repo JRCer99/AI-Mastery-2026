@@ -23,9 +23,9 @@
   - Upload image + chat — Claude Vision with MOCK=True flag, side-by-side layout
   - Libraries: `streamlit`, `Pillow`, `anthropic` (vision, live mode)
 
-- [ ] Project 3: 🏆 Chrome Extension — AI Summarizer *(Weekend Project)*
-  - Summarize any page, block distractions
-  - Stack: JavaScript, Chrome Extensions API, Claude API
+- [x] Project 3: 🏆 Chrome Extension — AI Summarizer ✅ *(Weekend Project)*
+  - Manifest V3, page text extraction, Claude API summarization, MOCK=true flag
+  - Stack: JavaScript, Chrome Extensions API, Anthropic API
 
 - [ ] Capstone: Fully Autonomous AI Agent System
   - End-to-end autonomous agent using all skills from Months 1–12
