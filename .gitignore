@@ -40,3 +40,4 @@ Thumbs.db
 # IDE
 .vscode/settings.json
 .idea/
+capstone_agent/chroma_db/

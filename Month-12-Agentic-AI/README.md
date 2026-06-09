@@ -27,9 +27,9 @@
   - Manifest V3, page text extraction, Claude API summarization, MOCK=true flag
   - Stack: JavaScript, Chrome Extensions API, Anthropic API
 
-- [ ] Capstone: Fully Autonomous AI Agent System
-  - End-to-end autonomous agent using all skills from Months 1–12
-  - Stack: Python, LangGraph, RAG, vector DB, Claude API
+- [x] Capstone: 🏆 Fully Autonomous AI Agent System ✅
+  - LangGraph state machine: Planner → Researcher (RAG + Web) → Writer → Critic (self-critique loop) → Finalizer
+  - Stack: Python, LangGraph, ChromaDB RAG, Claude API (Sonnet + Haiku), Streamlit
 
 ---
 
