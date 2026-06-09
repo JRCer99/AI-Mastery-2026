@@ -51,7 +51,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 - [x] Multi-tool Agent Skeleton ✅
 
 ### **Month 10: Vector Embeddings & Vector Databases**
-- [ ] Project 1: Semantic Search Engine over Documents
+- [x] Project 1: Semantic Search Engine over Documents ✅
 - [ ] Project 2: 🏆 Personal Notes → Searchable Knowledge Base *(Weekend Project)*
 
 ### **Month 11: Retrieval-Augmented Generation (RAG)**

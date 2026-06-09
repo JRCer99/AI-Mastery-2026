@@ -15,9 +15,9 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: Semantic Search Engine over Documents
+- [x] Project 1: Semantic Search Engine over Documents ✅
   - Embed a document corpus, query by meaning not keyword
-  - Libraries: `sentence-transformers`, `chromadb` or `pinecone`
+  - Libraries: `sentence-transformers`, `chromadb`
 
 - [ ] Project 2: 🏆 Personal Notes → Searchable Knowledge Base *(Weekend Project)*
   - Index personal notes/docs, chat-style search interface
