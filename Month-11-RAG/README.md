@@ -15,9 +15,9 @@
 
 ## 📅 Projects
 
-- [ ] Project 1: 🏆 Personal Knowledge Base Chatbot — Advanced RAG *(Weekend Project)*
-  - Chat with your own notes, docs, or textbooks
-  - Libraries: `langchain`, `chromadb`, `streamlit`, `anthropic`
+- [x] Project 1: 🏆 Personal Knowledge Base Chatbot — Advanced RAG ✅ *(Weekend Project)*
+  - FAISS retrieval → grounded answer generation, Streamlit chat UI, MOCK=True flag
+  - Libraries: `sentence-transformers`, `faiss-cpu`, `streamlit`
 
 - [ ] Project 2: Domain Expert RAG System
   - RAG over a specialized document set (legal, medical, technical)
