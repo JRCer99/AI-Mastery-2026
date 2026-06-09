@@ -19,9 +19,9 @@
   - CrewAI-compatible Agent/Task/Crew pipeline — Researcher → Writer, saves markdown report
   - Libraries: pure Python (CrewAI interface built from scratch for Python 3.9 compat)
 
-- [ ] Project 2: Autonomous Multimodal Assistant
-  - Agent that processes text + images to complete tasks
-  - Libraries: `anthropic` (Claude vision), `langchain`
+- [x] Project 2: Autonomous Multimodal Assistant ✅
+  - Upload image + chat — Claude Vision with MOCK=True flag, side-by-side layout
+  - Libraries: `streamlit`, `Pillow`, `anthropic` (vision, live mode)
 
 - [ ] Project 3: 🏆 Chrome Extension — AI Summarizer *(Weekend Project)*
   - Summarize any page, block distractions
