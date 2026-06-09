@@ -44,7 +44,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 ### **Month 8: MLOps & LLMOps**
 - [x] Project 1: Dockerized + MLflow Tracked Model ✅
 - [x] Project 2: CI/CD Pipeline with GitHub Actions ✅
-- [ ] Project 3: 🏆 Study With Me Live Dashboard *(Weekend Project)*
+- [x] Project 3: 🏆 Study With Me Live Dashboard ✅
 
 ### **Month 9: LLM Orchestration & Agent Foundations** *(Bridge Month)*
 - [ ] LangChain / LlamaIndex basics

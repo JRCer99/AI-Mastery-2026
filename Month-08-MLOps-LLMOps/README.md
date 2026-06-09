@@ -23,9 +23,9 @@
   - Automate test → lint → deploy on push
   - Tools: GitHub Actions, pytest, flake8
 
-- [ ] Project 3: 🏆 Study With Me Live Dashboard *(Weekend Project)*
-  - Real-time study session tracker with live stats
-  - Libraries: `streamlit`, `sqlite3` or `firebase`
+- [x] Project 3: 🏆 Study With Me Live Dashboard ✅
+  - Live countdown timer, streak tracking, SQLite persistence, charts
+  - Libraries: `streamlit`, `sqlite3`, `pandas`
 
 ---
 
