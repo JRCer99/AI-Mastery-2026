@@ -1,18 +1,42 @@
-.DS_Store
-__pycache__/
-*.pyc
-.env
-
-# ML artifacts — keep out of all months
+# ML artifacts
+mlruns/
 *.pkl
+*.h5
+*.pt
+*.pth
 *.png
+
+# Data / DBs
+*.db
+*.sqlite
 *.csv
 data/
 
-# Future month READMEs — local only until work begins
-Month-07-GenAI-LLMs/README.md
-Month-08-MLOps/README.md
-Month-09-LLM-Agents/README.md
-Month-10-Vector-DBs/README.md
-Month-11-RAG/README.md
-Month-12-Agentic-AI/README.md
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+secrets.json
+credentials.json
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
