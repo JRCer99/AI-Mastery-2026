@@ -11,7 +11,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 ### **Month 1: Python & Git**
 - [x] Project 1: CLI Task Manager (priorities, due dates, JSON persistence)
 - [x] Project 2: Personal Portfolio Generator Script
-- [ ] Bonus: Study With Me Live Dashboard (optional early build)
+- [x] Bonus: Study With Me Live Dashboard ✅
 
 ### **Month 2: Math and Stats**
 - [x] Project 1: Exploratory Data Analysis Dashboard (distributions, statistics)
