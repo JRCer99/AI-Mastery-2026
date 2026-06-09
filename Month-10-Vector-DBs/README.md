@@ -19,9 +19,9 @@
   - Embed a document corpus, query by meaning not keyword
   - Libraries: `sentence-transformers`, `chromadb`
 
-- [ ] Project 2: 🏆 Personal Notes → Searchable Knowledge Base *(Weekend Project)*
-  - Index personal notes/docs, chat-style search interface
-  - Libraries: `sentence-transformers`, `chromadb`, `streamlit`
+- [x] Project 2: 🏆 Personal Notes → Searchable Knowledge Base ✅ *(Weekend Project)*
+  - Add/remove notes dynamically, FAISS vector index, cosine similarity scoring
+  - Libraries: `sentence-transformers`, `faiss-cpu`, `streamlit`
 
 ---
 
@@ -50,5 +50,5 @@
 ```
 Month-10-Vector-DBs/
 ├── semantic_search.py        # Project 1: Semantic Search Engine
-└── knowledge_base_app.py     # Project 2: 🏆 Searchable Knowledge Base
+└── knowledge_base_app.py     # Project 2: 🏆 Personal Knowledge Base App
 ```
