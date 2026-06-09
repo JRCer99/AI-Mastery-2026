@@ -19,9 +19,9 @@
   - FAISS retrieval → grounded answer generation, Streamlit chat UI, MOCK=True flag
   - Libraries: `sentence-transformers`, `faiss-cpu`, `streamlit`
 
-- [ ] Project 2: Domain Expert RAG System
-  - RAG over a specialized document set (legal, medical, technical)
-  - Libraries: `langchain` or `llama-index`, `pinecone` or `chromadb`
+- [x] Project 2: Domain Expert RAG System ✅
+  - Chunking + ChromaDB + 3 switchable domains (AI/ML, Automotive, Nutrition)
+  - Libraries: `sentence-transformers`, `chromadb`, `streamlit`
 
 ---
 

@@ -56,7 +56,7 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 
 ### **Month 11: Retrieval-Augmented Generation (RAG)**
 - [x] Project 1: 🏆 Personal Knowledge Base Chatbot — Advanced RAG ✅ *(Weekend Project)*
-- [ ] Project 2: Domain Expert RAG System
+- [x] Project 2: Domain Expert RAG System ✅
 
 ### **Month 12: Agentic AI & Autonomous Multimodal Agents**
 - [ ] Project 1: Multi-Agent Research Team (CrewAI / LangGraph)
