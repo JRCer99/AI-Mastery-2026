@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/j-asttro99/JRC-Projects/AI-Mastery-2026/Month-08-MLOps-LLMOps/mlruns/383737246186794015/32530ec09bb14787a8868e20201ee40e/artifacts
+end_time: 1780963256347
+entry_point_name: ''
+experiment_id: '383737246186794015'
+lifecycle_stage: active
+run_id: 32530ec09bb14787a8868e20201ee40e
+run_name: RandomForest_v1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780963239828
+status: 3
+tags: []
+user_id: j-asttro99

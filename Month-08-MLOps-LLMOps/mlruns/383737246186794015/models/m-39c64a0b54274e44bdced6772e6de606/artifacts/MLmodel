@@ -1,0 +1,22 @@
+artifact_path: file:///Users/j-asttro99/JRC-Projects/AI-Mastery-2026/Month-08-MLOps-LLMOps/mlruns/383737246186794015/models/m-39c64a0b54274e44bdced6772e6de606/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-39c64a0b54274e44bdced6772e6de606
+model_size_bytes: 215850008
+model_uuid: m-39c64a0b54274e44bdced6772e6de606
+prompts: null
+run_id: ae4228c48480471c8413e7dbee7da923
+utc_time_created: '2026-06-09 00:35:21.009137'

@@ -102,7 +102,7 @@ AI-Mastery-2026/
 ├── Month-06-Transformers/           # up next
 ├── Month-07-GenerativeAI-LLMs/      # 🏆 AI Code Reviewer + Rate My Resume
 ├── Month-08-MLOps-LLMOps/           # 🏆 Study With Me Dashboard
-├── Month-09-LLM-Agents/
+├── Month-09-LLM-Orchestration/
 ├── Month-10-Vector-DBs/             # 🏆 Searchable Knowledge Base
 ├── Month-11-RAG/                    # 🏆 Knowledge Base Chatbot
 └── Month-12-Agentic-AI/             # 🏆 Chrome Extension

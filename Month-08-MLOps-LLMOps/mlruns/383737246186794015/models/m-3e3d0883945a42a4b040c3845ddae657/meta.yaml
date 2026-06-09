@@ -1,0 +1,10 @@
+artifact_location: file:///Users/j-asttro99/JRC-Projects/AI-Mastery-2026/Month-08-MLOps-LLMOps/mlruns/383737246186794015/models/m-3e3d0883945a42a4b040c3845ddae657/artifacts
+creation_timestamp: 1780963253616
+experiment_id: '383737246186794015'
+last_updated_timestamp: 1780963256339
+model_id: m-3e3d0883945a42a4b040c3845ddae657
+model_type: null
+name: model
+source_run_id: 32530ec09bb14787a8868e20201ee40e
+status: 2
+status_message: null
