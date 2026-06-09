@@ -1,78 +1,126 @@
 # JRC AI Mastery 2026
 
-**My 12-month journey to master AI — from Python basics to autonomous agents.**
+![Progress](https://img.shields.io/badge/Progress-32%2F32%20Complete-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c?logo=pytorch&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-LLM%20%2B%20Agents-blueviolet?logo=anthropic)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Apps-red?logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Complete-success)
 
-This repository tracks all projects, code, and progress for the **AI Mastery 2026** roadmap.
+**12-month self-directed AI/ML roadmap — from Python fundamentals to fully autonomous AI agents.**
+
+Built in parallel with a BS in Computer Science at SNHU. Every month ships at least one runnable project. No tutorials followed passively — every concept implemented from scratch or applied to a real problem.
 
 ---
 
-## 📅 Project Overview by Month
+## 🏆 Capstone: Autonomous AI Research Agent
 
-### **Month 1: Python & Git**
-- [x] Project 1: CLI Task Manager (priorities, due dates, JSON persistence)
-- [x] Project 2: Personal Portfolio Generator Script
+> The final project synthesizing all 12 months of skills into one system.
+
+A fully autonomous research agent that operates without human involvement:
+
+```
+Query → [PLANNER] → [RESEARCHER: RAG + Web] → [WRITER] → [CRITIC] → [FINALIZER] → Report
+                                                    ↑___________|
+                                               (self-critique loop)
+```
+
+**Stack:** LangGraph · ChromaDB · Claude Sonnet 4.6 · Streamlit · Python
+
+**What it does:** Takes any research question → decomposes into sub-questions → retrieves context from a ChromaDB vector knowledge base (RAG) → writes a structured report → autonomously critiques and revises → outputs polished markdown.
+
+**→ [View Capstone](Month-12-Agentic-AI/capstone_agent/)**
+
+---
+
+## 🏆 Featured Projects
+
+| Project | Month | Stack | What it does |
+|---------|-------|-------|-------------|
+| [Autonomous Research Agent](Month-12-Agentic-AI/capstone_agent/) | 12 | LangGraph, RAG, Claude | 5-node autonomous agent with self-critique loop |
+| [AI Code Reviewer](Month-07-GenerativeAI-LLMs/) | 7 | Claude API, Streamlit | Reviews code, flags bugs, suggests improvements |
+| [Rate My Resume App](Month-07-GenerativeAI-LLMs/) | 7 | Claude API, Streamlit | AI-powered resume scoring and feedback |
+| [Knowledge Base Chatbot](Month-11-RAG/) | 11 | RAG, ChromaDB, Claude | Advanced RAG chatbot over custom documents |
+| [Semantic Search Engine](Month-10-Vector-DBs/) | 10 | ChromaDB, embeddings | Semantic search over document collections |
+| [Study With Me Dashboard](Month-08-MLOps-LLMOps/) | 8 | Streamlit, live data | Real-time productivity and focus tracker |
+| [CNN Image Classifier](Month-05-DL-CV-NLP/) | 5 | PyTorch, CNN | Fashion MNIST classifier with training dashboard |
+| [Sentiment Analysis App](Month-05-DL-CV-NLP/) | 5 | DistilBERT, Streamlit | Real-time sentiment scoring web app |
+
+---
+
+## 📅 Full Curriculum — 32/32 Complete
+
+### Month 1: Python & Git
+- [x] CLI Task Manager (priorities, due dates, JSON persistence)
+- [x] Personal Portfolio Generator Script
 - [x] Bonus: Study With Me Live Dashboard ✅
 
-### **Month 2: Math and Stats**
-- [x] Project 1: Exploratory Data Analysis Dashboard (distributions, statistics)
-- [x] Project 2: Gradient Descent from Scratch Visualizer
-- [x] Project 3: Bayesian Probability Simulator
+### Month 2: Math & Stats
+- [x] Exploratory Data Analysis Dashboard
+- [x] Gradient Descent from Scratch Visualizer
+- [x] Bayesian Probability Simulator
 
-### **Month 3: Exploratory Data Manipulation & Feature Engineering**
-- [x] Project 1: Titanic / Kaggle Full Data Pipeline
-- [x] Project 2: Reusable Automated Data Preprocessing Package
+### Month 3: Data Manipulation & Feature Engineering
+- [x] Titanic / Kaggle Full Data Pipeline
+- [x] Reusable Automated Data Preprocessing Package
 
-### **Month 4: Machine Learning & Neural Networks**
-- [x] Project 1: End-to-End ML Pipeline (e.g. House Price Prediction)
-- [x] Project 2: Model Comparison Dashboard (Scikit-learn)
-- [x] Project 3: First Kaggle Competition Submission
+### Month 4: Machine Learning & Neural Networks
+- [x] End-to-End ML Pipeline (House Price Prediction)
+- [x] Model Comparison Dashboard (Scikit-learn)
+- [x] Kaggle Competition Submission
 
-### **Month 5: Deep Learning, Computer Vision & NLP**
-- [x] Project 1: Image Classifier (CNN with PyTorch)
-- [x] Project 2: Sentiment Analysis Web App
-- [x] Project 3: Sequence Prediction Model
+### Month 5: Deep Learning, Computer Vision & NLP
+- [x] Image Classifier (CNN with PyTorch)
+- [x] Sentiment Analysis Web App
+- [x] Sequence Prediction Model (LSTM)
 
-### **Month 6: Transformers & Transfer Learning**
-- [x] Project 1: Fine-tuned BERT for Custom Text Classification
-- [x] Project 2: Transfer Learning Demo (Domain Adaptation)
+### Month 6: Transformers & Transfer Learning
+- [x] Fine-tuned BERT for Custom Text Classification
+- [x] Transfer Learning Demo (Domain Adaptation)
 
-### **Month 7: Generative AI, LLMs & Fine-Tuning**
-- [x] Project 1: Domain-Specific Fine-tuned LLM ✅
-- [x] Project 2: 🏆 AI Code Reviewer Tool ✅
-- [x] Project 3: 🏆 Rate My Resume Web App ✅
+### Month 7: Generative AI, LLMs & Fine-Tuning
+- [x] Domain-Specific Fine-tuned LLM ✅
+- [x] 🏆 AI Code Reviewer Tool ✅
+- [x] 🏆 Rate My Resume Web App ✅
 
-### **Month 8: MLOps & LLMOps**
-- [x] Project 1: Dockerized + MLflow Tracked Model ✅
-- [x] Project 2: CI/CD Pipeline with GitHub Actions ✅
-- [x] Project 3: 🏆 Study With Me Live Dashboard ✅
+### Month 8: MLOps & LLMOps
+- [x] Dockerized + MLflow Tracked Model ✅
+- [x] CI/CD Pipeline with GitHub Actions ✅
+- [x] 🏆 Study With Me Live Dashboard ✅
 
-### **Month 9: LLM Orchestration & Agent Foundations** *(Bridge Month)*
+### Month 9: LLM Orchestration & Agent Foundations
 - [x] Simple Tool-Use Agent ✅
 - [x] Multi-tool Agent Skeleton ✅
 
-### **Month 10: Vector Embeddings & Vector Databases**
-- [x] Project 1: Semantic Search Engine over Documents ✅
-- [x] Project 2: 🏆 Personal Notes → Searchable Knowledge Base ✅ *(Weekend Project)*
+### Month 10: Vector Embeddings & Vector Databases
+- [x] Semantic Search Engine over Documents ✅
+- [x] 🏆 Personal Notes → Searchable Knowledge Base ✅
 
-### **Month 11: Retrieval-Augmented Generation (RAG)**
-- [x] Project 1: 🏆 Personal Knowledge Base Chatbot — Advanced RAG ✅ *(Weekend Project)*
-- [x] Project 2: Domain Expert RAG System ✅
+### Month 11: Retrieval-Augmented Generation (RAG)
+- [x] 🏆 Personal Knowledge Base Chatbot — Advanced RAG ✅
+- [x] Domain Expert RAG System ✅
 
-### **Month 12: Agentic AI & Autonomous Multimodal Agents**
-- [x] Project 1: Multi-Agent Research Team ✅
-- [x] Project 2: Autonomous Multimodal Assistant ✅
-- [x] Project 3: 🏆 Chrome Extension — AI Summarizer ✅ *(Weekend Project)*
-- [x] Capstone: 🏆 Fully Autonomous AI Agent System ✅
+### Month 12: Agentic AI & Autonomous Multimodal Agents
+- [x] Multi-Agent Research Team ✅
+- [x] Autonomous Multimodal Assistant ✅
+- [x] 🏆 Chrome Extension — AI Summarizer ✅
+- [x] 🏆 Capstone: Fully Autonomous AI Agent System ✅
 
 ---
 
-## 🏆 Weekend Projects (High-Impact Boosters)
+## 🛠 Tech Stack
 
-1. **AI Code Reviewer** → Month 7
-2. **Personal Searchable Knowledge Base** → Month 10/11
-3. **Study With Me Live Dashboard** → Month 1 or 8
-4. **Chrome Extension** → Month 12
-5. **Rate My Resume AI App** → Month 7
+**Languages:** Python · JavaScript
+
+**ML / Deep Learning:** PyTorch · Scikit-learn · Hugging Face Transformers · LSTM · CNN · BERT
+
+**LLMs & Agents:** Anthropic Claude API · LangGraph · LangChain · Fine-tuning · Prompt Engineering
+
+**RAG & Vector DBs:** ChromaDB · Sentence Transformers · ONNX embeddings · Semantic search
+
+**MLOps:** Docker · MLflow · GitHub Actions CI/CD · Experiment tracking
+
+**Web & UI:** Streamlit · Chrome Extensions (Manifest V3)
 
 ---
 
@@ -81,34 +129,25 @@ This repository tracks all projects, code, and progress for the **AI Mastery 202
 ```
 AI-Mastery-2026/
 ├── Month-01-Python-Git/
-│   ├── task_manager.py              # Project 1: CLI Task Manager
-│   └── portfolio_generator.py       # Project 2: Portfolio Generator
 ├── Month-02-Math-Stats/
-│   ├── eda_dashboard.py             # Project 1: EDA Dashboard
-│   ├── gradient_descent_visualizer.py  # Project 2: Gradient Descent Viz
-│   └── bayesian_coin_simulator.py   # Project 3: Bayesian Simulator
 ├── Month-03-Data-Prep/
-│   ├── titanic_pipeline.py          # Project 1: Titanic Pipeline
-│   └── reusable_preprocessor_demo.py  # Project 2: Reusable Preprocessor
 ├── Month-04-ML-Neural-Nets/
-│   ├── house_price_pipeline.py      # Project 1: ML Pipeline
-│   ├── model_comparison_dashboard.py  # Project 2: Model Dashboard
-│   └── kaggle_titanic_submission.py  # Project 3: Kaggle Submission
 ├── Month-05-DL-CV-NLP/
-│   ├── cnn_image_classifier.py      # Project 1: CNN Fashion MNIST
-│   ├── sentiment_analysis_app.py    # Project 2: Sentiment Web App
-│   └── lstm_sequence_predictor.py   # Project 3: LSTM Sequence Model
-├── Month-06-Transformers/           # up next
+├── Month-06-Transformers/
 ├── Month-07-GenerativeAI-LLMs/      # 🏆 AI Code Reviewer + Rate My Resume
-├── Month-08-MLOps-LLMOps/           # 🏆 Study With Me Dashboard
+├── Month-08-MLOps-LLMOps/           # 🏆 Study With Me Dashboard + CI/CD
 ├── Month-09-LLM-Orchestration/
 ├── Month-10-Vector-DBs/             # 🏆 Searchable Knowledge Base
 ├── Month-11-RAG/                    # 🏆 Knowledge Base Chatbot
-└── Month-12-Agentic-AI/             # 🏆 Chrome Extension
+└── Month-12-Agentic-AI/
+    ├── multi_agent_research.py
+    ├── multimodal_assistant.py
+    ├── chrome_extension/            # 🏆 AI Summarizer Chrome Extension
+    └── capstone_agent/              # 🏆 Autonomous Research Agent
 ```
 
 ---
 
 ## 🎯 Goal
 
-Build production-ready AI skills for internships and research by end of 2026.
+Build production-ready AI engineering skills — from fundamentals to autonomous agents — while completing a BS in Computer Science.
